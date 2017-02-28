@@ -4,7 +4,7 @@
 	require_once('index.php');
 	if(isset($_POST['frm%00@si'])){
 		$usuario=$_POST['inpusername'];
-		$contrasena=$_POST['inppassword'];
+		$contrasena=md5($_POST['inppassword']);
 		$cU=mysql_query("select * from usuarios where usrusuario='$usuario';");
 		if(mysql_num_rows($cU)!=0){
 			$r=mysql_fetch_assoc($cU);

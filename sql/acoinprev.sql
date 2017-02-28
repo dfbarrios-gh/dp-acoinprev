@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 -- 
 -- Servidor: localhost
--- Tiempo de generación: 28-02-2017 a las 15:51:24
+-- Tiempo de generación: 28-02-2017 a las 16:26:57
 -- Versión del servidor: 5.0.51
 -- Versión de PHP: 5.2.6
 
@@ -130,7 +130,7 @@ INSERT INTO `jornadas` VALUES ('1', 'UNICA', 'Jornada única. Horario: 7:00 AM -
 CREATE TABLE `usuarios` (
   `usrid` int(11) NOT NULL auto_increment,
   `usrusuario` varchar(20) NOT NULL,
-  `usrpassword` varchar(20) NOT NULL,
+  `usrpassword` varchar(255) NOT NULL,
   PRIMARY KEY  (`usrid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
@@ -138,7 +138,7 @@ CREATE TABLE `usuarios` (
 -- Volcar la base de datos para la tabla `usuarios`
 -- 
 
-INSERT INTO `usuarios` VALUES (1, 'admin', 'admin123');
+INSERT INTO `usuarios` VALUES (1, 'admin', '0192023a7bbd73250516f069df18b500');
 
 -- --------------------------------------------------------
 
