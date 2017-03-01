@@ -46,7 +46,7 @@ require_once("conexion.php");
                            <input type='text' name='inp%02%votar'/>
                           </br></br>
                           <input type='button' name='btncerrarsesion' value='Cerrar Sesión'
-                           onclick="this.form.action='csesion.php'; this.form.submit();"/>    
+                           onclick="this.form.action='csesion.php'; this.form.submit("/>    
                         </form>
                   </div>
       </body>
