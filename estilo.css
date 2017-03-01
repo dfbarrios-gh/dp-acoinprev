@@ -40,9 +40,27 @@
 	margin-top: 2em;
 	font-size: 3em;
 	color: rgba(39, 174, 96,1.0);
+}
 
 #msjexito img{
 	width: 30%;
+}
+
+#votoBlanco{
+	display: flex;
+	flex-wrap: wrap;
+	text-decoration: none;
+}
+
+#votoBlanco h4{
+	font-family: "Fjalla One";
+	text-decoration: none;
+	color: black;
+}
+
+#votoBlanco img{
+	width: 70%;
+	height: 70%;
 }
 
 
