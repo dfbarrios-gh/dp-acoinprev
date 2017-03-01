@@ -13,7 +13,6 @@
 <body>
     <?php
 require_once('conexion.php');
-ob_start();
 if(isset($_SESSION['ustatus'])){
         if($_SESSION['ustatus']=='active'){
             if($_SESSION['userid']==1){ 
@@ -26,26 +25,25 @@ if(isset($_SESSION['ustatus'])){
                         $r=mysql_fetch_assoc($query);
                         $nv=$r['cdtvotos']+1;
                         mysql_query("UPDATE candidatos SET cdtvotos=$nv where cdtcodigo=$usrid;");
-                        ob_start();                     
+                                      
                             header('refresh: 3; url=votante.php');
-                            echo "<id='msjexito'>¡Muy bien! Su voto ha sido registrado</div>";
-                        ob_end_flush();
+                            echo "<id='msjexito'><img src='img/like.png'></img><br />¡Muy bien! Su voto ha sido registrado</div>";
+                     
                     }else{ 
-                        ob_start();                     
+                                           
                             header('refresh: 3; url=votante.php');
                         echo "<div id='msjerror'><img src='img/warning.png'></img><br />Tu voto no se pudo registrar con exito. Intenta nuevamente.</div>";
-                        ob_end_flush();
+                 
                     }
                 }else{ 
-                    ob_start();                     
+                                      
                         header('refresh: 3; url=votante.php');
                         echo "<div id='msjerror'><img src='img/warning.png'></img><br />¿Estas intentando hacer fraude? <br/> En Colombia, esto es un delito!</div>";
-                    ob_end_flush();
+                   
                 }
             }
         }else{header("location:index.php");}
     }else{header("location:index.php");}
-ob_end_flush();
 ?>
 </body>
 </html>
