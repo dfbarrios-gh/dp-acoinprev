@@ -2,7 +2,7 @@
 require_once("conexion.php");
       if(isset($_SESSION['ustatus'])){
             if($_SESSION['ustatus']=='active'){
-                  header('location:busqueda.php');
+                  header('location:votacion.php');
             }
       }
 ?>

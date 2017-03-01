@@ -1,14 +1,10 @@
 <?php
 require_once("conexion.php");
-if(!isset($_POST['inpvotante'])){
-      header("location:index.php");      
-}else{
-      if(isset($_SESSION['ustatus'])){
+   if(isset($_SESSION['ustatus'])){
             if($_SESSION['ustatus']!='active'){
                   header('location:index.php');
             }
-      }
-}      
+      }else{header("location:index.php");}      
 ?>
 <!DOCTYPE html>
 <html lang='es-co'>
@@ -43,7 +39,9 @@ if(!isset($_POST['inpvotante'])){
                               <a href='' title='#6 Heidi Mayorga'>
                                     <img title='Heidi Mayorga #6' src='img/candidates/cdt@06.jpg' ></img>
                               </a>
-                              
+                          </br></br>
+                          <input type='button' name='btnresultados' value='Resultados'/>
+                          <input type='button' name='btncerrarsesion' value='Cerrar Sesión'/>    
                         </form>
                   </div>
       </body>
