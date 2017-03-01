@@ -25,6 +25,11 @@ require_once("conexion.php");
                   <h1>Elecciones personero estudiantil</h1>
                   <h5>ACOINPREV</h5>
             </header>
+            <form method='POST'>
+                  <input type='button' name='ssesiona' value='Cerrar Sesion' 
+                     onclick="this.form.action='csesion.php'; this.form.submit();" id="btncerrarsesion"/>
+            </form>
+
             <div id='imagecandidates' class="centrarCaja">                                        
                <a href='sufragar.php?usrid=MQ==' title='#1 Angie Rojas'>
                   <img title='Angie Rojas #1' src='img/candidates/cdt@01.jpg' ></img>
@@ -48,10 +53,7 @@ require_once("conexion.php");
                   <img title='Voto En Blanco #7' src='img/vote.png' ></img><br>
                   <h4>Voto en Blanco</h4>                  
                </a>
-               <form method='POST'>
-                  <input type='button' name='ssesiona' value='Cerrar Sesion' 
-                     onclick="this.form.action='csesion.php'; this.form.submit();"/>
-               </form>
+               
             </div>
       </body>
 </html>
