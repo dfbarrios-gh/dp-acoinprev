@@ -46,8 +46,10 @@ require_once("conexion.php");
                <a href='sufragar.php?usrid=6' title='#6 Heidi Mayorga'>
                   <img title='Heidi Mayorga #6' src='img/candidates/cdt@06.jpg' ></img>
                </a>
-                <a href='sufragar.php?usrid=6' title='Voto en Blanco'>
-                  <img title='Heidi Mayorga #6' src='img/candidates/cdt@06.jpg' ></img>
+                <a href='sufragar.php?usrid=6' title='Voto en Blanco' id="votoBlanco">
+                  <img title='Heidi Mayorga #6' src='img/vote.png' ></img><br>
+                  <h4>Voto en Blanco</h4>
+                  
                </a>
             </div>
       </body>
