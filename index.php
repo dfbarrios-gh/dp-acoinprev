@@ -24,11 +24,15 @@ require_once("conexion.php");
                   <h1>Elecciones Personero Estudiantil</h1>
                   <h5>Sv Simple Elections</h5>
             </header>
-            <form name='frmsignip' method='POST' autocomplete='OFF' class="centrarCaja">
-                  <fieldset>
-                        <legend>Inicia Sesión</legend>
+            <section class="centrarCaja">
+                  <div id="icono">
+                        <img src="img/imagenVotacion.jpg" alt="">
+                  </div>
+                  <div id="formLogin">
+                        <form name='frmsignip' method='POST' autocomplete='OFF' class="centrarCaja">
+                              <h2>Inicio de Sesion</h2>
                               <label for='lblusername'>Usuario</label><br/>
-                              <input type='text' name='inpusername' placeholder='Digita Usuario o Nickname' class='est' required/>
+                              <input type='text' name='inpusername' placeholder='Digita tu usuario' class='est' required/>
                               <br/>
 
                               <label for='lblpassword'>Contraseña</label><br/>
@@ -41,6 +45,9 @@ require_once("conexion.php");
                               <input type='reset' name='rstclean' value='Reestablecer'/>
 
                   </fieldset>
-            </form>                        
+            </form>            
+                  </div>
+            </section>
+                                    
       </body>
 </html>
