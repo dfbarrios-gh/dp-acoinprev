@@ -14,10 +14,23 @@
 #imagecandidates{
 	margin: 0 auto;	
 	width:70%;
-	margin-top:7.5%;
-	margin-bottom:2%;
+	margin-top:1em;
+	/*margin-bottom:2%;*/
 }
 
+#msjerror{
+	font-family: "Fjalla One";
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 2em;
+	font-size: 3em;
+	color: rgba(192, 57, 43,1.0);
+}
+
+#msjerror img{
+	width: 30%;
+}
 
 
 /*Etiquetas HTML*/
