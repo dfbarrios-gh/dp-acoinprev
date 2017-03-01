@@ -27,24 +27,30 @@ require_once("conexion.php");
                   <h1>Elecciones Personero Estudiantil</h1>
                   <h5>Sv Simple Elections</h5>
             </header>
-                  <div id='contenedor'>                                        
-                        <form name='frmsignip' method='POST' autocomplete='OFF'>
-                         <fieldset>
-                              <legend>Inicia Sesión</legend>
-                              <label for='lblusername'>Usuario</label>
-                                    <br/>
-                              <input type='text' name='inpusername' placeholder='Digita Usuario o Nickname' class='est' required/>
-                              <br/><br/>
-                              <label for='lblpassword'>Contraseña</label>
-                                    <br/>
+            <section class="centrarCaja">
+                  <div id="icono">
+                        <img src="img/imagenVotacion.jpg" alt="">
+                  </div>
+                  <div id="formLogin">
+                        <form name='frmsignip' method='POST' autocomplete='OFF' class="centrarCaja">
+                              <h2>Inicio de Sesion</h2>
+                              <label for='lblusername'>Usuario</label><br/>
+                              <input type='text' name='inpusername' placeholder='Digita tu usuario' class='est' required/>
+                              <br/>
+
+                              <label for='lblpassword'>Contraseña</label><br/>
                               <input type='password' name='inppassword' placeholder='Digita tu contraseña' class='pass' required/>
-                              <br/><br/> 
+                              <br/>
+
                               <input type='hidden' name='frm%00@si'/>
                               <input type='submit' name='sbmsignin' value='Ingresar'
                                      onclick="this.form.action='login.php'; this.form.submit();"/>
                               <input type='reset' name='rstclean' value='Reestablecer'/>
-                        </fieldset>
-                        </form>                        
+
+                  </fieldset>
+            </form>            
                   </div>
+            </section>
+                                    
       </body>
 </html>
