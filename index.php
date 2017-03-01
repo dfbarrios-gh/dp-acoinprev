@@ -16,11 +16,9 @@ require_once("conexion.php");
             <title>Sv Simple Elections</title>
             <link rel='shortcut icon' href='img/fav.jpg'/>
             <link rel='stylesheet' type='text/css' href='estilo.css'/>
-
             <!-- Cargando Fuentes -->
             <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Roboto" rel="stylesheet">
             <!-- Fin carga de fuentes -->
-
       </head>      
       <body>
             <header>
