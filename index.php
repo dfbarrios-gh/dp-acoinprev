@@ -2,7 +2,10 @@
 require_once("conexion.php");
       if(isset($_SESSION['ustatus'])){
             if($_SESSION['ustatus']=='active'){
-                  header('location:votacion.php');
+                if($_SESSION['userid']==1){ 
+                  header("location:administrador.php");  }
+                        else if($_SESSION['userid']==2){
+                              header("location:votante.php"); }
             }
       }
 ?>
@@ -37,7 +40,7 @@ require_once("conexion.php");
                               <input type='password' name='inppassword' placeholder='Digita tu contraseña' class='pass' required/>
                               <br/><br/> 
                               <input type='hidden' name='frm%00@si'/>
-                              <input type='button' name='sbmsignin' value='Ingresar'
+                              <input type='submit' name='sbmsignin' value='Ingresar'
                                      onclick="this.form.action='login.php'; this.form.submit();"/>
                               <input type='reset' name='rstclean' value='Reestablecer'/>
                         </fieldset>
