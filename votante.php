@@ -4,11 +4,9 @@ require_once("conexion.php");
             if($_SESSION['ustatus']!='active'){
                   header('location:index.php');
             }
-      }else{
-         if($_SESSION['userid']==1){ 
+            if($_SESSION['userid']==1){ 
                   header("location:administrador.php");  }
-                        else if($_SESSION['userid']==2){
-                              header("location:votante.php"); }}      
+      }else{header("location:index.php");}
 ?>
 <!DOCTYPE html>
 <html lang='es-co'>
@@ -28,29 +26,32 @@ require_once("conexion.php");
                   <h5>ACOINPREV</h5>
             </header>
             <div id='imagecandidates' class="centrarCaja">                                        
-               <a href='sufragar.php?usrid=1' title='#1 Angie Rojas'>
+               <a href='sufragar.php?usrid=MQ==' title='#1 Angie Rojas'>
                   <img title='Angie Rojas #1' src='img/candidates/cdt@01.jpg' ></img>
                </a>
-               <a href='sufragar.php?usrid=2' title='#2 Daniela Tazama'>
+               <a href='sufragar.php?usrid=Mg==' title='#2 Daniela Tazama'>
                   <img title='Angie Rojas #2' src='img/candidates/cdt@02.jpg' ></img>
                </a>
-               <a href='sufragar.php?usrid=3' title='#3 Ashley Higua'>
+               <a href='sufragar.php?usrid=Mw==' title='#3 Ashley Higua'>
                   <img title='Ashley Higua #3' src='img/candidates/cdt@03.jpg' ></img>
                </a>
-               <a href='sufragar.php?usrid=4' title='#4 Tatiana Fino'>
+               <a href='sufragar.php?usrid=NA==' title='#4 Tatiana Fino'>
                   <img title='Tatiana Fino #4' src='img/candidates/cdt@04.jpg' ></img>
                </a>
-               <a href='sufragar.php?usrid=5' title='#5 Bryan Torres'>
+               <a href='sufragar.php?usrid=NQ==' title='#5 Bryan Torres'>
                   <img title='Bryan Torres #5' src='img/candidates/cdt@05.jpg' ></img>
                </a>
-               <a href='sufragar.php?usrid=6' title='#6 Heidi Mayorga'>
+               <a href='sufragar.php?usrid=Ng==' title='#6 Heidi Mayorga'>
                   <img title='Heidi Mayorga #6' src='img/candidates/cdt@06.jpg' ></img>
                </a>
-                <a href='sufragar.php?usrid=6' title='Voto en Blanco' id="votoBlanco">
-                  <img title='Heidi Mayorga #6' src='img/vote.png' ></img><br>
-                  <h4>Voto en Blanco</h4>
-                  
+                <a href='sufragar.php?usrid=Nw==' title='Voto en Blanco' id="votoBlanco">
+                  <img title='Voto En Blanco #7' src='img/vote.png' ></img><br>
+                  <h4>Voto en Blanco</h4>                  
                </a>
+               <form method='POST'>
+                  <input type='button' name='ssesiona' value='Cerrar Sesion' 
+                     onclick="this.form.action='csesion.php'; this.form.submit();"/>
+               </form>
             </div>
       </body>
 </html>

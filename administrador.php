@@ -4,11 +4,9 @@ require_once("conexion.php");
             if($_SESSION['ustatus']!='active'){
                   header('location:index.php');
             }
-      }else{
-         if($_SESSION['userid']==1){ 
-                  header("location:administrador.php");  }
-                        else if($_SESSION['userid']==2){
-                              header("location:votante.php"); }}      
+            if($_SESSION['userid']==2){ 
+                  header("location:votante.php");  }
+      }else{ header("location:index.php"); }     
 ?>
 <!DOCTYPE html>
 <html lang='es-co'>
@@ -23,13 +21,11 @@ require_once("conexion.php");
                   <h1>Elecciones personero estudiantil</h1>
                   <h5>ACOINPREV</h5>
             </header>
-                  <div id='imagecandidates'>                                        
-                        <form name='frmcandidates' method='POST'>
-                           Resultados
-                           
-                          <input type='button' name='btnresultados' value='Resultados'/>
-                          <input type='button' name='btncerrarsesion' value='Cerrar Sesión'/>    
-                        </form>
-                  </div>
+            <div id='imagecandidates'>                                        
+               <form method='POST'>
+                  <input type='button' name='ssesionv' value='Cerrar Sesion' 
+                    onclick="this.form.action='csesion.php'; this.form.submit();"/>
+               </form>
+            </div>
       </body>
 </html>
