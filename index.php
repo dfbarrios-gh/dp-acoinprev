@@ -13,10 +13,15 @@ require_once("conexion.php");
             <title>Sv Simple Elections</title>
             <link rel='shortcut icon' href='img/fav.jpg'/>
             <link rel='stylesheet' type='text/css' href='estilo.css'/>
+
+            <!-- Cargando Fuentes -->
+            <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Roboto" rel="stylesheet">
+            <!-- Fin carga de fuentes -->
+
       </head>      
       <body>
             <header>
-                  <h1>Elecciones personero estudiantil</h1>
+                  <h1>Elecciones Personero Estudiantil</h1>
                   <h5>Sv Simple Elections</h5>
             </header>
                   <div id='contenedor'>                                        
