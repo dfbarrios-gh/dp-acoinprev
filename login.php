@@ -13,7 +13,7 @@
 				$_SESSION['uname']=$r['usrusuario'];
 				$_SESSION['upass']=$r['usrpassword'];
 				$_SESSION['ustatus']='active';
-				header("location:busqueda.php");
+				header("location:votacion.php");
 			}else{echo "<div id='mensaje'>Credenciales Invalidas</div>";}
 		}else{echo "<div id='mensaje'>Usuario Invalido</div>";}
 	}else{@header("location:index.php");}
