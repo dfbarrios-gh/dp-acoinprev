@@ -17,7 +17,7 @@
                         $nv=$r['cdtvotos']+1;
                         mysql_query("update candidatos set cdtvotos=$nv where cdtcodigo=$usrid;");                                      
                             header('refresh: 3; url=votante.php');
-                            echo "<id='msjexito'><img src='img/like.png'></img><br />¡Muy bien! Su voto ha sido registrado</div>";                     
+                            echo "<div id='msjexito'><img src='img/like.png'></img><br />¡Muy bien! Su voto ha sido registrado</div>";                     
                     }else{                                            
                             header('refresh: 3; url=votante.php');
                             echo "<div id='msjerror'><img src='img/warning.png'></img><br />Tu voto no se pudo registrar con exito. Intenta nuevamente.</div>";                 
