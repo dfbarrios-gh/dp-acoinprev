@@ -28,7 +28,7 @@ require_once("conexion.php");
                            Resultados
                            
                           <input type='button' name='btnresultados' value='Resultados'/>
-                          <input type='button' name='btncerrarsesion' value='Cerrar Sesión'/>    
+                          <input type='button' name='btncerrarsesion' value='Cerrar Sesión' id='btncerrarsesion'/>    
                         </form>
                   </div>
       </body>
