@@ -7,6 +7,7 @@
             if($_SESSION['userid']==1){ 
               header("location:administrador.php"); }
             else{
+                $usrid = $_GET['usrid'];
                 if(isset($usrid)){
                     $usrid=base64_decode($usrid);
                     if($usrid>=1&$usrid<=7){
