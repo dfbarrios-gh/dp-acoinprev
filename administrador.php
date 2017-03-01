@@ -28,19 +28,19 @@ require_once("conexion.php");
                            $qr=mysql_query("select * from candidatos;");
                            echo "<table>
                                  <tr>
-                                    <th colspan='7'>Resultado</th>
+                                    <th colspan='7' class='resTitulo'>Resultado</th>
                                  </tr>";
                            echo "<tr>";
                            for($i=1;$i<=7;$i++){
                               $imgurl="img/candidates/cdt@0".$i.".jpg";
                               $ncand="Candidato #".$i;                               
-                                 echo "<td><img src=$imgurl tile='$ncand'></img></td>";                              
+                                 echo "<td><img src=$imgurl tile='$ncand' class='resimgcand'></img></td>";                              
                            }
                            echo "</tr><tr>";
                            while($r=mysql_fetch_assoc($qr)){
-                               echo "<td>".
-                                       $r['cdtnombres']." ".$r['cdtapellido']."</br>Total Votos: ".$r['cdtvotos']
-                                    ."</td>";
+                               echo "<td class='resTextoCand'>".
+                                       $r['cdtnombres']." ".$r['cdtapellido']."</br><span class='textoTotal'>Total Votos:</span><span class='resultado'> ".$r['cdtvotos']
+                                    ."</span></td>";
                            }
 
                             echo "</tr></table>";
