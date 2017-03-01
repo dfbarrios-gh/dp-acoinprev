@@ -16,8 +16,8 @@
 				if($_SESSION['userid']==1){ header("location:administrador.php");  }
 				else if($_SESSION['userid']==2){header("location:votante.php"); }
 				else{ header("location:index.php");}
-			}else{echo "<div id='mensaje'>Credenciales Invalidas</div>";}
-		}else{echo "<div id='mensaje'>Usuario Invalido</div>";}
+			}else{echo "<div id='mensaje' class='mensaje'>Credenciales Invalidas</div>";}
+		}else{echo "<div id='mensaje' class='mensaje'>Usuario Invalido</div>";}
 	}else{@header("location:index.php");}
 	ob_end_flush();
 ?>

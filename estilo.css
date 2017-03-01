@@ -19,15 +19,6 @@
 }
 
 
-#mensaje{
-	margin:0 auto;
-	border-radius:0.5em;
-	color:#FFFFFF;
-	width:35%;
-	text-align: center;
-	padding:0.2em 0.2em;
-	background-color:rgba(40, 0, 168, 1);
-}
 
 /*Etiquetas HTML*/
 header{
@@ -51,9 +42,9 @@ header h1{
 section{
 	width: 80%;
 	display: flex;
-	margin-top: 3em !important;
+	margin-top: 1em !important;
 	background-color: #6DCBD3;
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 button{
@@ -102,7 +93,7 @@ button{
 	text-align: center;
 }
 
-#formLogin input[type=button]{
+#formLogin input[type=submit]{
 	width: 60%;
 	background-color: rgba(39, 174, 96,1.0);
 	color: white;
@@ -130,4 +121,14 @@ button{
 
 .centrarCaja{
 	margin: 0 auto;
+}
+
+.mensaje{
+	padding: 1em 0;
+	text-align: center;
+	font-family: "Fjalla One";
+	color: white;
+	margin: 0 auto;
+	background-color: rgba(231, 76, 60,1.0);
+	width: 80%;
 }
