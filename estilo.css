@@ -56,6 +56,40 @@ button{
 
 
 /*Id's*/
+
+#imagecandidates{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#imagecandidates a{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	padding: 1em 0;
+}
+
+#imagecandidates a img:hover{
+	animation-name: movimiento;
+    animation-duration: 1s;
+    /*transform: rotate(30deg);*/
+}
+
+/* The animation code */
+@keyframes movimiento {
+	0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(30deg);}
+    /*50%  {transform: rotate(0deg);}*/
+    75%  {transform: rotate(-30deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#imagecandidates a img{
+
+}
+
+
 #icono{
 	width: 50%;
 }
