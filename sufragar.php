@@ -1,3 +1,6 @@
+<?php
+    require_once('conexion.php');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +15,13 @@
 </head>
 <body>
     <?php
-require_once('conexion.php');
-if(isset($_SESSION['ustatus'])){
+    if(isset($_SESSION['ustatus'])){
         if($_SESSION['ustatus']=='active'){
             if($_SESSION['userid']==1){ 
               header("location:administrador.php"); }
             else{
                 if(isset($usrid)){
-                    if($usrid>=1&$usrid<=6){
+                    if($usrid>=1&$usrid<=7){
                         $candidato=$usrid;
                         $query=mysql_query("select * from candidatos where cdtcodigo=$candidato;");
                         $r=mysql_fetch_assoc($query);
@@ -32,7 +34,7 @@ if(isset($_SESSION['ustatus'])){
                     }else{ 
                                            
                             header('refresh: 3; url=votante.php');
-                        echo "<div id='msjerror'><img src='img/warning.png'></img><br />Tu voto no se pudo registrar con exito. Intenta nuevamente.</div>";
+                            echo "<div id='msjerror'><img src='img/warning.png'></img><br />Tu voto no se pudo registrar con exito. Intenta nuevamente.</div>";
                  
                     }
                 }else{ 
