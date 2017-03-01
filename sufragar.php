@@ -13,6 +13,7 @@
 <body>
     <?php
 require_once('conexion.php');
+ob_start();
 if(isset($_SESSION['ustatus'])){
         if($_SESSION['ustatus']=='active'){
             if($_SESSION['userid']==1){ 
@@ -27,7 +28,7 @@ if(isset($_SESSION['ustatus'])){
                         mysql_query("UPDATE candidatos SET cdtvotos=$nv where cdtcodigo=$usrid;");
                         ob_start();                     
                             header('refresh: 3; url=votante.php');
-                            echo "<id='msjerror'>¡Muy bien! Su voto ha sido registrado</div>";
+                            echo "<id='msjexito'>¡Muy bien! Su voto ha sido registrado</div>";
                         ob_end_flush();
                     }else{ 
                         ob_start();                     
@@ -44,6 +45,7 @@ if(isset($_SESSION['ustatus'])){
             }
         }else{header("location:index.php");}
     }else{header("location:index.php");}
+ob_end_flush();
 ?>
 </body>
 </html>
