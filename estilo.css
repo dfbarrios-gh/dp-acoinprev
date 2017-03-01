@@ -4,6 +4,17 @@
 	
 }
 
+#btncerrarsesion{
+	display: block;
+	padding: .5em 2em;
+	background-color: #c0392b;
+	color: white;
+	font-family: 'Fjalla One';
+	border: none;
+	margin: 0 auto;
+	margin-top: 2em;
+}
+
 #contenedor{
 	margin: 0 auto;	
 	width:35%;
@@ -15,7 +26,6 @@
 	margin: 0 auto;	
 	width:70%;
 	margin-top:1em;
-	/*margin-bottom:2%;*/
 }
 
 #msjerror{
