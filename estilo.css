@@ -32,6 +32,19 @@
 	width: 30%;
 }
 
+#msjexito{
+	font-family: "Fjalla One";
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 2em;
+	font-size: 3em;
+	color: rgba(39, 174, 96,1.0);
+
+#msjexito img{
+	width: 30%;
+}
+
 
 /*Etiquetas HTML*/
 header{
