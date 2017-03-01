@@ -10,6 +10,9 @@
 	background-color: #c0392b;
 	color: white;
 	font-family: 'Fjalla One';
+	border: none;
+	margin: 0 auto;
+	margin-top: 2em;
 }
 
 #contenedor{

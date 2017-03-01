@@ -20,16 +20,17 @@
             if($_SESSION['userid']==1){ 
               header("location:administrador.php"); }
             else{
-                if(isset($usrid)){
-                    if($usrid>=1&$usrid<=7){
-                        $candidato=$usrid;
+                if(isset( $_GET['usrid'])){
+                    $usrid =  $_GET['usrid'];
+                    if(( $usrid>=1) and ( $usrid<=7)){
+                        $candidato= $_GET['usrid'];
                         $query=mysql_query("select * from candidatos where cdtcodigo=$candidato;");
                         $r=mysql_fetch_assoc($query);
                         $nv=$r['cdtvotos']+1;
-                        mysql_query("UPDATE candidatos SET cdtvotos=$nv where cdtcodigo=$usrid;");
+                        mysql_query("UPDATE candidatos SET cdtvotos=$nv where cdtcodigo= $usrid;");
                                       
                             header('refresh: 3; url=votante.php');
-                            echo "<id='msjexito'><img src='img/like.png'></img><br />¡Muy bien! Su voto ha sido registrado</div>";
+                            echo "<div id='msjexito'><img src='img/like.png'></img><br />¡Muy bien! Su voto ha sido registrado</div>";
                      
                     }else{ 
                                            
