@@ -1,5 +1,6 @@
 <?php
-require_once("conexion.php");
+require_once("connection.php");
+
    if(isset($_SESSION['ustatus'])){
             if($_SESSION['ustatus']!='active'){
                   header('location:index.php');
@@ -24,7 +25,7 @@ require_once("conexion.php");
                <div id='imagecandidates'>                                        
                      <form name='frmcandidates' method='POST'>                     
                         <?php
-                           require_once('conexion.php');
+                           require_once('connection.php');
                            $qr=mysql_query("select * from candidatos;");
                            echo "<table>
                                  <tr>

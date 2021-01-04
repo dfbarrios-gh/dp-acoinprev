@@ -1,6 +1,6 @@
 <?php
 	ob_start();
-	require_once('conexion.php');
+	require_once('connection.php');
 	require_once('index.php');
 	if(isset($_POST['frm%00@si'])){
 		$usuario=$_POST['inpusername'];

@@ -1,5 +1,5 @@
 <?php
-    require_once('conexion.php');
+    require_once('connection.php');
     if(!isset($_SESSION['ustatus'])){
         header("location:index.php");
     }else{
